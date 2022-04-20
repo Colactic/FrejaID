@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\cypress",
-    "\\cypress\\integration",
-    "\\cypress\\integration\\FrejaIDTest"
+    "\\cypress\\integration"
   ],
-  "SelectedNode": "\\cypress\\integration\\FrejaIDTest\\FrejaID_Tests.js",
+  "SelectedNode": "\\cypress\\integration\\FrejaID_Tests.js",
   "PreviewInSolutionExplorer": false
 }

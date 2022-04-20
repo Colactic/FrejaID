@@ -69,3 +69,19 @@ describe('Test the "INTEGRITET" button', () => {
         cy.url().should('include', '/vanliga-fragor/gdpr-sv/')
     })
 })
+
+describe('Test the "KONTAKTA OSS" page', () => {
+    it('Visit the "KONTAKTA OSS" page and make sure the two "FREJA SUPPORT" and "SPARRA FREJA" boxes exist and are visible', () => {
+        cy.visit('https://frejaeid.com/kontakta-oss/')
+        cy.get('div.fusion-builder-row.fusion-row').eq(0).should('exist').and('be.visible')
+        cy.get('div.fusion-builder-row.fusion-row').eq(1).should('exist').and('be.visible')
+    })
+})
+
+describe('Test the "KONTAKTA OSS" links', () => {
+    it('Visit the "KONTAKTA OSS" page and make sure the phone link and e-mail link exists', () => {
+        cy.visit('https://frejaeid.com/kontakta-oss/')
+        cy.contains('+46 8-38 88 58').should('exist')
+        cy.contains('support@frejaeid.com').should('exist')
+    })
+})
